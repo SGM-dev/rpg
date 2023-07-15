@@ -20,8 +20,8 @@ function renderCharacter(data) {
   const { elementId, name, avatar, health, diceRoll, diceCount } = data;
 
   const diceHtml = diceRoll
-    .map((diceValue) => {
-      return `<div class="dice">${diceValue}</div>`;
+    .map((num) => {
+      return `<div class="dice">${num}</div>`;
     })
     .join("");
 
