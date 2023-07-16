@@ -7,7 +7,7 @@ function getDiceRollArray(diceCount) {
 function getDiceHtml(diceCount) {
   return getDiceRollArray(diceCount)
     .map(() => {
-      return `<div class="dice">${num}</div>`;
+      return `<div class="dice">${diceCount}</div>`;
     })
     .join("");
 }
