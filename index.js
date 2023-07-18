@@ -55,3 +55,5 @@ function render() {
 
   document.getElementById(orc.elementId).innerHTML = orc.getCharacterHtml();
 }
+
+render()
