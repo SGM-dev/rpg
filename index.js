@@ -1,5 +1,4 @@
 import characterData from "./data.js";
-
 import Character from "./Character.js";
 
 function render() {
@@ -9,7 +8,7 @@ function render() {
 }
 
 function attack() {
-  console.log("attack button working!");
+  render()
 }
 
 const wizard = new Character(characterData.hero);
