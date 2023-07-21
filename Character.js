@@ -14,6 +14,10 @@ function Character(data) {
       .join("");
   };
 
+  this.takeDamage = function (currentDiceScore) {
+    console.log(` ${this.name}: ${currentDiceScore}`);
+  };
+
   this.getCharacterHtml = function () {
     const { elementId, name, avatar, health, diceArray } = this;
 

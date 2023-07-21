@@ -8,9 +8,12 @@ function render() {
 }
 
 function attack() {
-  wizard.getDiceHtml()
-  orc.getDiceHtml()
-  render()
+  wizard.getDiceHtml();
+  orc.getDiceHtml();
+
+  wizard.takeDamage(orc.currentDiceScore);
+  orc.takeDamage(wizard.currentDiceScore);
+  render();
 }
 
 const wizard = new Character(characterData.hero);
