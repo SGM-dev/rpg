@@ -19,6 +19,9 @@ function Character(data) {
       (total, num) => total + num
     );
     this.health -= totalAttackScore;
+    if (this.health <= 0) {
+      this.health = 0;
+    }
   };
 
   this.getCharacterHtml = function () {
