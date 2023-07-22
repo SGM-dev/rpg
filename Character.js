@@ -15,7 +15,10 @@ function Character(data) {
   };
 
   this.takeDamage = function (currentDiceScore) {
-    console.log(` ${this.name}: ${currentDiceScore}`);
+    const totalAttackScore = currentDiceScore.reduce(
+      (total, num) => total + num
+    );
+    this.health -= totalAttackScore;
   };
 
   this.getCharacterHtml = function () {
