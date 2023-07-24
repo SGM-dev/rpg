@@ -54,7 +54,5 @@ function Character(data) {
   };
 }
 
-const getPercentage = (remainingHealth, maximumHealth) =>
-  (100 * remainingHealth) / maximumHealth;
 
 export default Character;
