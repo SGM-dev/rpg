@@ -1,4 +1,8 @@
-import { getDiceRollArray, getDicePlaceholderHtml } from "./utils.js";
+import {
+  getDiceRollArray,
+  getDicePlaceholderHtml,
+  getPercentage,
+} from "./utils.js";
 
 function Character(data) {
   Object.assign(this, data);
