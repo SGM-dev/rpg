@@ -28,4 +28,5 @@ const characterData = {
     currentDiceScore: [],
   },
 };
+
 export default characterData;

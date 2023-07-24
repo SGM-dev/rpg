@@ -54,5 +54,4 @@ function Character(data) {
   };
 }
 
-
 export default Character;
