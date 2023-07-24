@@ -4,6 +4,7 @@ function Character(data) {
   Object.assign(this, data);
 
   this.diceArray = getDicePlaceholderHtml(this.diceCount);
+  this.maxHealth = this.health;
 
   this.getDiceHtml = function () {
     this.currentDiceScore = getDiceRollArray(this.diceCount);
@@ -36,5 +37,8 @@ function Character(data) {
         </div>`;
   };
 }
+
+const getPercentage = (remainingHealth, maximumHealth) =>
+  (100 * remainingHealth) / maximumHealth;
 
 export default Character;
